@@ -1,0 +1,16 @@
+{
+    "HomePage_Data" :{
+        "text_generator_heading": "Text Generator",
+        "text_generator_first_content": "Our Text generator uses state-of-the-art artificial intelligence algorithms to generate text from your input. Whether you need promotional text, educational content, or anything in between, our AI is here to help.",
+        "text_generator_second_content": "Get started by entering your prompt and let our AI work its magic to generate helpful text for you.",
+        "image_generator_heading": "Image Generator",
+        "image_generator_first_content": "Our image generator uses state-of-the-art artificial intelligence algorithms to create stunning Images from your input. Whether you need promotional images, educational content, or anything in between, our AI is here to help.",
+        "image_generator_second_content": "Get started by entering your prompt and let our AI work its magic to generate beautiful images for you.",
+        "image_analyzer_heading": "Image Analyzer",
+        "image_analyzer_first_content": "Our image analyzer uses state-of-the-art artificial intelligence algorithms to analyze your given image. You need to analyze your image, our AI is here to help.",
+        "image_analyzer_second_content": "Get started by entering your image and let our AI work its magic to analyze your image for you.",
+        "video_generator_heading": "Video Generator",
+        "video_generator_first_content": "Our Video generator uses state-of-the-art artificial intelligence algorithms to create stunning Videos from your input. Whether you need promotional images, educational content, or anything in between, our AI is here to help.",
+        "video_generator_second_content": "Get started by entering your prompt and let our AI work its magic to generate beautiful images for you."
+    }
+}

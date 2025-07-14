@@ -1,0 +1,37 @@
+.img{
+    width: 100%;
+    height:700px;
+}
+
+.image_generator{
+    height: 100vh;
+    background-color: purple;
+}
+.loading{
+    width: 100%;
+    height: 100vh;
+    background: purple;
+    backdrop-filter: blur(10px) saturate(180%);
+    -webkit-backdrop-filter: blur(5px) saturate(180%);
+}
+
+.loading img{
+    width: 100px;
+    height: 100px;
+    margin: 20% 0% 0% 45%;
+}
+
+.generated_img{
+width:400px;
+height: 400px;
+margin-left:15%;
+margin-top: 5%;
+}
+
+@media only screen and (max-width:767px){
+    .loading img{
+        width: 100px;
+        height: 100px;
+        margin: 70% 0% 0% 36%;
+    }
+}

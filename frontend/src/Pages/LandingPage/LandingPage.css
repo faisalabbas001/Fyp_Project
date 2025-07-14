@@ -1,0 +1,223 @@
+.landing-page {
+  width: 100%;
+  background-image: url("../../../public/img/animation.gif");
+  background-size: cover;
+  height: 100%;
+  position: fixed;
+  z-index: -1;
+  color:white;
+}
+
+.landing-page-body{
+  position: relative;
+  z-index: 9999;
+  color:white;
+}
+
+.gradient-text {
+  font-weight: bold;
+  background: linear-gradient(90deg, #f950ff, #ff6347, #852603);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+.services{
+  margin-top: 100px;
+}
+
+.services h1{
+  font-size: 4rem;
+  text-align: center;
+  width: 80%;
+  margin: auto;
+}
+
+.services p{
+  text-align: center;
+  width: 80%;
+  margin: auto;
+  font-size: 1.1rem;
+}
+.contents {
+  /* position: relative;
+  z-index: 9999; */
+  width: 100%;
+}
+
+.landing-navbar {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+}
+
+.nav-items {
+  list-style: none;
+  margin-top: 30px;
+}
+
+.nav-links {
+  width: 15%;
+}
+
+.nav-links ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.video_logo {
+  display: flex;
+  width: 20%;
+  justify-content: space-around;
+ 
+}
+
+.video-logo-heading{
+  text-align: center;
+  font-size: 5rem;
+  margin-top: 5%;
+}
+
+.banner-text {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.start-btn {
+  margin-left: 44%;
+  margin-top: 1%;
+  border-radius: 40px;
+  font-size: 20px;
+  padding: 20px;
+  background-color: yellow;
+  color: black;
+  border: none;
+}
+
+.text-generator-section{
+  width: 60%;
+  margin:auto;
+}
+
+.video-generator-section{
+  width: 100%;
+  margin:auto;
+}
+
+.image-generator-section{
+  width: 60%;
+  margin:auto;
+  margin-top: 5%;
+}
+
+video{
+  width: 80%;
+  margin: 5% 0px 0px 10%;
+}
+
+.image-generator-section img{
+  width: 80%;
+  height: 400px;
+  margin: 5% 0px 0px 10%;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .Landing_logo {
+    animation: App-logo-spin infinite 20s linear;
+    position: relative;
+  }
+}
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .banner-text {
+    font-size: 1.5rem;
+    text-align: center;
+    
+  }
+
+  .video-logo-heading{
+    font-size: 3rem;
+    margin-top: 30%;
+  }
+
+  .nav-links {
+    width: 30%;
+    margin-right: 0%;
+  }
+
+  .start-btn {
+    margin-left: 31%;
+    margin-top: 3%;
+  }
+
+  .services{
+    margin-top: 100px;
+  }
+  
+  .services h1{
+    font-size: 2rem;
+    text-align: center;
+    width: 100%;
+    margin: auto;
+  }
+  
+  .services p{
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    font-size: 1rem;
+  }
+  .contents {
+    /* position: relative;
+    z-index: 9999; */
+    width: 100%;
+  }
+  
+  .landing-navbar {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+  }
+  
+  .nav-items {
+    list-style: none;
+    margin-top: 30px;
+  }
+  
+  .video_logo {
+    display: flex;
+    width: 20%;
+    justify-content: space-around;
+  }
+
+  .text-generator-section{
+    width: 90%;
+    margin:auto;
+  }
+  
+  .image-generator-section{
+    width: 90%;
+    margin:auto;
+    margin-top: 5%;
+  }
+  
+  video{
+    width: 100%;
+    margin: 0% 0px 0px 0%;
+  }
+  
+  .image-generator-section img{
+    width: 80%;
+    height: 400px;
+    margin: 5% 0px 0px 10%;
+  }
+}

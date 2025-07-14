@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.home-main {
+  background-color: purple;
+  font-family: "Macan", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: white;
+}
+
+.shape-gif {
+  margin-top: 15%;
+  margin-left: 5%;
+}
+
+.shape {
+  width: 90%;
+  height: 90%;
+}
+
+.gif {
+  margin-top: 15%;
+  margin-left: 10%;
+}
+
+.section {
+  width: 90%;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+  padding-top: 0;
+}
+
+.image {
+  width: 50%;
+  margin-top: 15%;
+}
+
+.analyzer-section {
+  margin-bottom: 40px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .shape {
+    animation: App-logo-spin infinite 20s linear;
+    position: relative;
+  }
+}
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .section .image {
+    width: 80%;
+    align-items: center;
+  }
+
+  .section img {
+    margin-left: 0%;
+    width: 100%;
+  }
+
+  .section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .mobile-body {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .gif {
+    margin-left: 10%;
+  }
+}

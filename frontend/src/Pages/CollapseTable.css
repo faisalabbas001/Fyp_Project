@@ -1,0 +1,26 @@
+.input-field{
+    width:30% !important;
+    /* margin-bottom:3%; */
+    /* margin-top:3%; */
+}
+
+.Lower-card{
+    width: 90%;
+    margin:auto;
+    padding-top: 5%;
+}
+
+.upper-card{
+    color:#306B42;
+}
+
+th{
+   background-color: #82B891 !important; 
+   color:#306B42 !important;
+   text-align: center;
+}
+
+.table-main{
+    background-color: gray;
+    height:100vh;
+}

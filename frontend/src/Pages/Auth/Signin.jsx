@@ -1,24 +1,32 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './Signin.css';
 import { useNavigate } from 'react-router-dom';
-import axios from 'axios';
 import { toast } from 'react-toastify';
 import { useAuth0 } from "@auth0/auth0-react";
+import { useAuth } from '../../contexts/AuthContext';
+
 const Signin = () => {
   const { loginWithRedirect } = useAuth0();
+  const { login, isAuthenticated } = useAuth();
   const [form, setForm] = useState({ email: '', password: '' });
   const navigate = useNavigate();
 
+  // Redirect if already authenticated
+  useEffect(() => {
+    if (isAuthenticated()) {
+      navigate('/home');
+    }
+  }, [isAuthenticated, navigate]);
+
   const handleLogin = async (e) => {
     e.preventDefault();
-    try {
-      const res = await axios.post('http://localhost:5000/api/auth/login', form);
-      localStorage.setItem('token', res.data.token);
-      localStorage.setItem('user', JSON.stringify(res.data.user)); 
+    const result = await login(form.email, form.password);
+    
+    if (result.success) {
       toast.success('✅ Login successful');
       navigate('/home');
-    } catch (error) {
-      toast.error(error.response?.data?.msg || 'Login failed');
+    } else {
+      toast.error(result.error);
     }
   };
 
@@ -47,6 +55,8 @@ const Signin = () => {
           Continue with Google
         </p>
       </form>
+
+      
     </div>
   );
 };

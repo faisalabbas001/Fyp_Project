@@ -9,7 +9,9 @@ import Video from './Video';
 import VideoGenerator from './Pages/Video_Generator/VideoGenerator';
 import Signup from "./Pages/Auth/Signup";
 import Signin from './Pages/Auth/Signin';
-import PrivateRoute from './PrivateRoute'; // ✅ Add this
+import NotFound from './Pages/NotFound/NotFound';
+import PrivateRoute from './PrivateRoute';
+import ProtectedHome from './components/ProtectedHome';
 
 export default function App_Routes() {
   return (
@@ -43,8 +45,11 @@ export default function App_Routes() {
         element={<PrivateRoute><Video /></PrivateRoute>}
       />
 
-      {/* Public landing page */}
-      <Route path="/" element={<LandingPage />} />
+      {/* Public landing page - redirects to /home if authenticated */}
+      <Route path="/" element={<ProtectedHome><LandingPage /></ProtectedHome>} />
+      
+      {/* 404 Not Found - Must be last route */}
+      <Route path="*" element={<NotFound />} />
     </Routes>
   );
 }
